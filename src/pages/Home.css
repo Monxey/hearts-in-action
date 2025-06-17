@@ -1,0 +1,90 @@
+@import '../App.css';
+
+.stat-background {
+    background-color: rgb(18, 18, 37);
+    padding: 2rem;
+    font-family: sans-serif;
+}
+
+.header-layout {
+    text-align: center;
+    margin: 1rem;
+}
+
+.header-description {
+    font-size: 1.5rem;
+    max-width: 50%;
+    margin: 0 auto 4rem;
+}
+
+.icon-layout {
+    display: flex;
+    gap: 5%;
+    align-items: center; 
+    margin-bottom: 1rem;
+}
+
+.icon {
+    background-color: var(--brand-primary);
+    border-radius: 50%;
+    height: 2.75rem;
+    width: 2.75rem;
+    padding: 0%;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.help-background {
+    background-color: black;
+    padding: 2rem;
+    font-family: sans-serif;
+}
+
+.help-card-title {
+    color: white;
+    text-align: left;
+    font-size: 1.4rem;
+}
+
+.help-card-desc {
+    color: var(--gray-primary);
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.card-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin: 2rem auto;
+    max-width: 70%;
+}
+
+.card {
+    border: 0.1rem solid var(--brand-secondary);
+    border-radius: 1rem;
+    background-color: rgb(18, 18, 37);
+    width: 75%;
+    padding: 2rem;
+    margin: 0;
+}
+
+.card-title {
+    font-size: 2rem;
+    color: var(--brand-secondary);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-desc {
+    font-size: 1.1rem;
+    margin: 0.5rem;
+    color: var(--gray-primary);
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 2rem;
+}
