@@ -1,7 +1,7 @@
 import '../App.css'
 import './Home.css'
 import image_7 from "../assets/image_7.png"
-import { Heart, Users, GraduationCap, Utensils } from "lucide-react";
+import { Users, GraduationCap, Utensils } from "lucide-react";
 
 function Home() {
     return ( 
