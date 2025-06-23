@@ -1,7 +1,8 @@
-import '../App.css'
-import './Home.css'
-import image_7 from "../assets/image_7.png"
-import { Users, GraduationCap, Utensils } from "lucide-react";
+import '../App.css';
+import './Home.css';
+import image_7 from "../assets/image_7.png";
+import { Heart, Users, GraduationCap, Utensils } from "lucide-react";
+import { NavLink } from 'react-router-dom';
 
 function Home() {
     return ( 
@@ -34,15 +35,15 @@ function Home() {
                 <p className='header-description' style={{color: 'var(--gray-primary)'}}>These aren't just numbers—they represent real students in our community who need our support.</p>
             </div>
             <div className='card-layout'>
-                <div className='card' style={{backgroundColor: 'rgba(196, 0, 0, 0.1)'}}>
+                <div className='card' style={{backgroundColor: 'rgba(196, 0, 0, 0.2)'}}>
                     <div className='card-title'>40%</div>
                     <div className='card-desc'>Fall asleep in class or can't focus due to hunger</div>
                 </div>
-                <div className='card' style={{backgroundColor: 'rgba(170, 111, 0, 0.1)'}}>
+                <div className='card' style={{backgroundColor: 'rgba(170, 111, 0, 0.2)'}}>
                     <div className='card-title'>13%</div>
                     <div className='card-desc'>Have failed assignments because they didn't have enough to eat</div>
                 </div>
-                <div className='card' style={{backgroundColor: 'rgba(179, 90, 90, 0.1)'}}>
+                <div className='card' style={{backgroundColor: 'rgba(179, 90, 90, 0.2)'}}>
                     <div className='card-title'>25%</div>
                     <div className='card-desc'>Students struggle to afford their next meal</div>
                 </div>
@@ -86,6 +87,25 @@ function Home() {
                     <div className='help-card-desc'>School supplies and resources for academic success, removing barriers to education.</div>
                 </div>
             </div>
+        </section>
+        {/*How You Can Help*/}
+        <section className='gradient-section' style= {{fontFamily: 'sans-serif', padding: '2rem 2rem'}}>
+            <div className='header-layout'>
+                <h1>Make a Difference</h1>
+                <p className='header-description' style={{color: 'var(--gray-primary)'}}>
+                    Every action counts. Whether you donate, volunteer, or spread awareness, you can help break the cycle of food insecurity.
+                </p>
+            </div>
+            <div style={{display: 'flex', justifyContent: 'center', margin: '0 auto 2rem', gap: '2rem'}}>
+                <NavLink className="button donate button-transition" to='/donate'>
+                        Donate
+                        <Heart style={{color:'var(--brand-secondary)', height:'1.5rem', width: '1.5rem'}}/> 
+                </NavLink>
+                <a className="button volunteer button-transition" href="https://docs.google.com/forms/d/e/1FAIpQLSd6an51-ZwG-ECVu6EZjxhaqs5CFYUOHxMBwW6c4P9KbUDc1A/viewform?fbclid=PAZXh0bgNhZW0CMTEAAafYZR3yFbKsiGBYyKinROG9mZMdK5NcPPQp-XY7oI2LvQPvq0SfG4eTXohVEw_aem_2IUtKpN5uYV4VQC8uQB82w" target="_blank" rel="noopener noreferrer">
+                        Volunteer
+                </a>
+            </div>
+            
         </section>
         </>
     )

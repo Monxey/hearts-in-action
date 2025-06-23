@@ -84,6 +84,42 @@
     text-align: center;
 }
 
+.button {
+    text-decoration: none;
+    border: 0.1rem solid white;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    font-size: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.button-transition {
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.donate {
+    background-color: white;
+    color: var(--brand-secondary);
+    padding: 1rem 2rem;
+}
+
+.donate:hover {
+    background-color: var(--gray-primary);
+}
+
+.volunteer {
+    background-color: black;
+    color: white;
+}
+
+.volunteer:hover {
+    background-color: white;
+    color: var(--brand-secondary);
+}
+
 h1 {
     color: white;
     font-size: 2rem;
