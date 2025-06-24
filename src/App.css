@@ -8,6 +8,7 @@
   --brand-secondary: rgb(242, 90, 90);
   --brand-dark: rgb(20, 20, 20);
   --brand-accent: rgb(242, 242, 242);
+  --brand-dark-alt: rgb(18, 18, 37);
 
   --gray-primary: rgb(209, 209, 209);
 }
@@ -51,7 +52,7 @@ body {
 }
 
 .gradient-section {
-  background: linear-gradient(to bottom right, var(--brand-primary), var(--brand-dark));
+  background: linear-gradient(to bottom, var(--brand-primary), var(--brand-dark-alt));
   color: white;
   padding: 6rem 2rem;
 }

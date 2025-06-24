@@ -4,7 +4,7 @@
   align-items: center;
   padding: 0.25%;
   background-color: var(--brand-dark);
-  border-bottom: 0.1rem solid var(--brand-primary);
+  border-bottom: 0.1rem solid var(--brand-secondary);
   position: fixed;
   top: 0;
   left: 0;

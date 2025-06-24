@@ -1,7 +1,7 @@
 import '../App.css';
 import './Home.css';
 import image_7 from "../assets/image_7.png";
-import { Heart, Users, GraduationCap, Utensils } from "lucide-react";
+import { BookOpenText, Heart, Users, GraduationCap, Utensils } from "lucide-react";
 import { NavLink } from 'react-router-dom';
 
 function Home() {
@@ -89,7 +89,7 @@ function Home() {
             </div>
         </section>
         {/*How You Can Help*/}
-        <section className='gradient-section' style= {{fontFamily: 'sans-serif', padding: '2rem 2rem'}}>
+        <section className='red-background' style= {{fontFamily: 'sans-serif', padding: '2rem 2rem'}}>
             <div className='header-layout'>
                 <h1>Make a Difference</h1>
                 <p className='header-description' style={{color: 'var(--gray-primary)'}}>
@@ -104,8 +104,11 @@ function Home() {
                 <a className="button volunteer button-transition" href="https://docs.google.com/forms/d/e/1FAIpQLSd6an51-ZwG-ECVu6EZjxhaqs5CFYUOHxMBwW6c4P9KbUDc1A/viewform?fbclid=PAZXh0bgNhZW0CMTEAAafYZR3yFbKsiGBYyKinROG9mZMdK5NcPPQp-XY7oI2LvQPvq0SfG4eTXohVEw_aem_2IUtKpN5uYV4VQC8uQB82w" target="_blank" rel="noopener noreferrer">
                         Volunteer
                 </a>
+                <NavLink className= 'button learn-more button-transition' to='/about'>
+                    Learn More
+                    <BookOpenText style={{height:'1.5rem', width: '1.5rem'}}/>
+                </NavLink>
             </div>
-            
         </section>
         </>
     )
