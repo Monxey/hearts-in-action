@@ -1,5 +1,6 @@
 import './Footer.css';
 import logo from '../assets/hia_logo.png';
+import Instagram from '../assets/instagram.png'
 
 function Footer() {
   return (
@@ -31,8 +32,11 @@ function Footer() {
         <div className="footer-social">
           <h3>Connect</h3>
           <ul>
-            <li><a href="https://www.instagram.com/umd.hia/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-            <li><a href="https://facebook.com/heartsinaction" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li>
+              <a href="https://www.instagram.com/umd.hia/" target="_blank" rel="noopener noreferrer">
+                <img src={Instagram} alt='Instagram' style={{width:'2rem', height:'2rem'}}/>
+              </a>
+            </li>
           </ul>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import '../App.css';
-import './Home.css';
+import './Home.css'
 import image_7 from "../assets/image_7.png";
 import { BookOpenText, Heart, Users, GraduationCap, Utensils } from "lucide-react";
 import { NavLink } from 'react-router-dom';
@@ -10,8 +10,8 @@ function Home() {
         {/*Hero Section*/}
         <section className='gradient-section'>
             <div className='grid'>
-                <div style={{maxWidth: '600px'}}>
-                    <h1 style={{textAlign: 'left', fontSize: '36px'}}>Fighting Food Insecurity at{" "}
+                <div style={{maxWidth: '600px', fontFamily: 'sans-serif'}}>
+                    <h1 className='home-h1' style={{textAlign: 'left', fontSize: '36px'}}>Fighting Food Insecurity at{" "}
                     <span style={{color: '#f08080'}}>UMD</span>
                     </h1>
                     <p style={{fontSize: '24px', textAlign: 'left', color: 'var(--gray-primary)', borderBottom: '0.1rem solid white', paddingBottom: '4rem'}}>
@@ -31,7 +31,7 @@ function Home() {
         {/*Statistics*/}
         <section className='stat-background'>
             <div className='header-layout'>
-                <h1>The Reality of Food Insecurity</h1>
+                <h1 className='home-h1'>The Reality of Food Insecurity</h1>
                 <p className='header-description' style={{color: 'var(--gray-primary)'}}>These aren't just numbers—they represent real students in our community who need our support.</p>
             </div>
             <div className='card-layout'>
@@ -52,7 +52,7 @@ function Home() {
         {/*How We Help*/}
         <section className='help-background'>
             <div className='header-layout'>
-                <h1>How We Help</h1>
+                <h1 className='home-h1'>How We Help</h1>
                 <p className='header-description' style={{color: 'var(--gray-primary)'}}>
                     Hearts in Action provides comprehensive support to address food and material insecurity 
                     in our community through various initiatives.
@@ -91,7 +91,7 @@ function Home() {
         {/*How You Can Help*/}
         <section className='red-background' style= {{fontFamily: 'sans-serif', padding: '2rem 2rem'}}>
             <div className='header-layout'>
-                <h1>Make a Difference</h1>
+                <h1 className='home-h1'>Make a Difference</h1>
                 <p className='header-description' style={{color: 'var(--gray-primary)'}}>
                     Every action counts. Whether you donate, volunteer, or spread awareness, you can help break the cycle of food insecurity.
                 </p>

@@ -1,0 +1,41 @@
+@import '../App.css';
+
+.h1 {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+.description {
+    color: white;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.content {
+    padding-top: 8rem;
+    background: linear-gradient(to bottom, var(--brand-primary), var(--brand-dark), var(--brand-primary));
+}
+
+.list-item {
+    margin-bottom: 1rem;
+}
+
+.mission-background {
+    font-family: monospace;
+    margin: 0rem 16rem;
+    border-top: 0.15rem solid var(--brand-primary);
+}
+
+.problem-background {
+    font-family: monospace;
+    margin: 0rem 16rem;
+    border-top: 0.15rem solid var(--brand-primary);
+}
+
+.approach-background {
+    font-family: monospace;
+    margin: 0rem 16rem 2rem;
+    border-top: 0.15rem solid var(--brand-primary);
+    border-bottom: 0.15rem solid var(--brand-primary);
+}

@@ -135,7 +135,7 @@
     color: var(--brand-secondary);
 }
 
-h1 {
+.home-h1 {
     color: white;
     font-size: 2rem;
 }
