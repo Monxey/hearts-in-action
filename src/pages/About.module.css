@@ -20,7 +20,7 @@
 }
 
 .approach-card {
-    background-color: var(--brand-primary-dark);
+    background-color: rgba(160, 28, 28, 0.400);
     border-radius: 1rem;
     border: 0.1rem solid white;
     padding: 1.5rem;
@@ -52,19 +52,19 @@
 .first-background {
     font-family: Calibri, 'Trebuchet MS', sans-serif;
     padding: 2rem 16rem;
-    background-color: var(--brand-dark-alt);
+    background: linear-gradient(to bottom, var(--brand-dark-alt), var(--brand-primary-dark));
 }
 
 .second-background {
     font-family: Calibri, 'Trebuchet MS', sans-serif;
     padding: 2rem 16rem;
-    background-color: var(--brand-primary-dark);
+    background: linear-gradient(to bottom, var(--brand-primary-dark), var(--brand-secondary), var(--brand-primary-dark));
 }
 
 .third-background {
     font-family: Calibri, 'Trebuchet MS', sans-serif;
     padding: 2rem 16rem 2rem;
-    background-color: var(--brand-dark-alt);
+    background: linear-gradient(to bottom, var(--brand-primary-dark), var(--brand-dark-alt));
 }
 
 .team-button {

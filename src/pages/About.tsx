@@ -137,7 +137,7 @@ function About() {
                                     passion and resonate with the needs identified by our members.
                                 </div>
                             </div>
-                            <div className={`${styles['list-item']} ${styles['approach-card']}`}>
+                            <div className={`${styles['list-item']} ${styles['approach-card']}`} style={{background: 'rgba(140, 160, 28, 0.4)'}}>
                                 <div className={styles['approach-header']}>
                                     Focused Initiatives
                                     <Timer/>
@@ -150,7 +150,7 @@ function About() {
                             </div>
                         </div>
                         <div className={styles['approach-grid']}>
-                            <div className={`${styles['list-item']} ${styles['approach-card']}`}>
+                            <div className={`${styles['list-item']} ${styles['approach-card']}`} style={{background: 'rgba(160, 98, 28, 0.4)'}}>
                                 <div className={styles['approach-header']}>
                                     Student Leadership
                                     <img src={Student} style={{width: '5%'}}/>
@@ -163,7 +163,7 @@ function About() {
                                 students with practical leadership experience and fosters a strong sense
                                 of ownership and accountability
                             </div>
-                            <div className={`${styles['list-item']} ${styles['approach-card']}`}>
+                            <div className={`${styles['list-item']} ${styles['approach-card']}`} style={{background: 'rgba(160, 28, 28, 0.4)'}}>
                                 <div className={styles['approach-header']}>
                                     Community Engagement
                                     <University/>
