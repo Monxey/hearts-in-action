@@ -7,10 +7,12 @@ import Team from './pages/Team.tsx';
 import AI_Census from './pages/AI_Census.tsx';
 import Header from './components/Header'
 import Footer from './components/Footer'
+import ScrollToTop from './components/ScrollToTop.tsx';
 
 function App() {
   return (
     <>
+    <ScrollToTop />
     <Header />
     <Routes>
       <Route path="/" element={<Home />} />         {/* default page */}

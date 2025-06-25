@@ -5,6 +5,7 @@
 
   /* Hearts in Action Brand Colors - Black/Red Theme */
   --brand-primary: rgb(160, 28, 28);
+  --brand-primary-dark: rgb(87, 0, 0);
   --brand-secondary: rgb(242, 90, 90);
   --brand-dark: rgb(20, 20, 20);
   --brand-accent: rgb(242, 242, 242);
