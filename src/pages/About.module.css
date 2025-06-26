@@ -50,17 +50,17 @@
 }
 
 .first-background {
-    padding: 2rem 16rem;
+    padding: 2rem 12rem;
     background: linear-gradient(to bottom, var(--brand-dark), var(--brand-primary-dark));
 }
 
 .second-background {
-    padding: 2rem 16rem;
+    padding: 2rem 8rem;
     background: linear-gradient(to bottom, var(--brand-primary-dark), var(--brand-secondary), var(--brand-primary-dark));
 }
 
 .third-background {
-    padding: 2rem 16rem 2rem;
+    padding: 2rem 12rem 2rem;
     background: linear-gradient(to bottom, var(--brand-primary-dark), var(--brand-dark));
 }
 
