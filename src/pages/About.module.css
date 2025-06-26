@@ -50,21 +50,18 @@
 }
 
 .first-background {
-    font-family: Calibri, 'Trebuchet MS', sans-serif;
     padding: 2rem 16rem;
-    background: linear-gradient(to bottom, var(--brand-dark-alt), var(--brand-primary-dark));
+    background: linear-gradient(to bottom, var(--brand-dark), var(--brand-primary-dark));
 }
 
 .second-background {
-    font-family: Calibri, 'Trebuchet MS', sans-serif;
     padding: 2rem 16rem;
     background: linear-gradient(to bottom, var(--brand-primary-dark), var(--brand-secondary), var(--brand-primary-dark));
 }
 
 .third-background {
-    font-family: Calibri, 'Trebuchet MS', sans-serif;
     padding: 2rem 16rem 2rem;
-    background: linear-gradient(to bottom, var(--brand-primary-dark), var(--brand-dark-alt));
+    background: linear-gradient(to bottom, var(--brand-primary-dark), var(--brand-dark));
 }
 
 .team-button {

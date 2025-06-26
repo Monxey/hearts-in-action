@@ -1,9 +1,23 @@
 @import '../App.css';
 
+.home-content {
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
 .stat-background {
-    background-color: rgb(18, 18, 37);
+    background-color: var(--brand-dark);
     padding: 2rem;
-    font-family: sans-serif;
     border-bottom: 0.1rem solid var(--brand-primary);
 }
 
@@ -44,7 +58,6 @@
 .help-background {
     background-color: var(--brand-dark);
     padding: 2rem;
-    font-family: sans-serif;
 }
 
 .help-card-title {
@@ -60,26 +73,26 @@
 }
 
 .card-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 2rem auto;
-    max-width: 70%;
+    gap: 4rem;
 }
 
 .card {
     border: 0.1rem solid var(--brand-secondary);
     border-radius: 1rem;
     background-color: rgb(18, 18, 37);
-    width: 75%;
+    width: 20rem;
+    height: 25%;
     padding: 2rem;
-    margin: 0;
+    margin: 0%;
 }
 
 .card-title {
     font-size: 2rem;
     color: var(--brand-secondary);
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .card-desc {
@@ -138,4 +151,32 @@
 .home-h1 {
     color: white;
     font-size: 2rem;
+}
+
+.gradient-section {
+  background: linear-gradient(to bottom, var(--brand-primary), var(--brand-dark));
+  color: white;
+  padding: 8rem; 
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  margin: 0rem auto;
+}
+
+.caption {
+  position: absolute;
+  bottom: -1rem;  /* slightly overlaps the image */
+  left: -2rem;
+  background-color: var(--brand-dark);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  max-width: auto;
+  font-size: 1rem;
+  text-align: left;
+  border: 0.1rem solid var(--brand-primary);
 }

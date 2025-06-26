@@ -19,19 +19,6 @@ body {
   padding: 0;
 }
 
-.caption {
-  position: absolute;
-  bottom: -1rem;  /* slightly overlaps the image */
-  left: -2rem;
-  background-color: var(--brand-dark);
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  max-width: auto;
-  font-size: medium;
-  text-align: left;
-  border: 0.1rem solid var(--brand-primary);
-}
-
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
@@ -39,30 +26,7 @@ body {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .read-the-docs {
   color: #505050;
 }
 
-.gradient-section {
-  background: linear-gradient(to bottom, var(--brand-primary), var(--brand-dark-alt));
-  color: white;
-  padding: 6rem 2rem;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: auto auto;
-  align-items: center;
-  justify-content: center;
-  gap: 4rem;
-  margin: 0 auto;
-}
