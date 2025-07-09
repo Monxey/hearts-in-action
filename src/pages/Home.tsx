@@ -1,5 +1,5 @@
 import '../App.css';
-import './Home.css'
+import './Home.css';
 import image_7 from "../assets/image_7.png";
 import { BookOpenText, Heart, Users, GraduationCap, Utensils } from "lucide-react";
 import { NavLink } from 'react-router-dom';
@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom';
 function Home() {
     return ( 
         <>
-        <div className='home-content'>
+        <div className='content'>
             {/*Hero Section*/}
             <section className='gradient-section'>
                 <div className='container'>

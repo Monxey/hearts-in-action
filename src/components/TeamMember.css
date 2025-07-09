@@ -1,0 +1,44 @@
+@import '../App.css';
+
+.team-member {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 50%;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: var(--brand-dark-alt);
+  border: 0.1rem solid white;
+}
+
+.member-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 75%;
+    gap: 1rem;
+}
+
+.member-photo {
+  width: 25%;
+  height: 25%;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 2rem;
+}
+
+.member-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.member-role {
+  color: var(--brand-secondary);
+}
+
+.member-bio {
+  font-size: 0.95rem;
+  text-align: start;
+}

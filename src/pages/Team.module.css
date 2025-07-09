@@ -1,0 +1,22 @@
+@import '../App.css';
+
+.background {
+    background: linear-gradient(to bottom, var(--brand-dark), var(--brand-primary), var(--brand-dark));
+    padding: 4rem;
+    margin-top: 4rem;
+}
+
+.team-overview {
+    background-color: var(--brand-dark-alt);
+    padding: 2rem;
+    margin: 2rem 12rem;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+}
+
+.team-members {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,19 @@
+@import '../App.css';
+
+.resource-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--brand-dark-alt);
+    border: 0.1rem solid white;
+    padding: 2rem 4rem;
+}
+
+.resource-links {
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    flex-direction: column;
+    gap: 2rem;
+}
+

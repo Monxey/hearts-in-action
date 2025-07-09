@@ -1,6 +1,6 @@
 @import '../App.css';
 
-.home-content {
+.content {
     justify-content: space-between;
     align-items: center;
     max-width: 100%;

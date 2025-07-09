@@ -1,6 +1,7 @@
 import './Footer.css';
 import logo from '../assets/hia_logo.png';
 import Instagram from '../assets/instagram.png'
+import { NavLink } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -22,9 +23,9 @@ function Footer() {
           <h3>Get Involved</h3>
           <ul>
             <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd6an51-ZwG-ECVu6EZjxhaqs5CFYUOHxMBwW6c4P9KbUDc1A/viewform?fbclid=PAZXh0bgNhZW0CMTEAAafYZR3yFbKsiGBYyKinROG9mZMdK5NcPPQp-XY7oI2LvQPvq0SfG4eTXohVEw_aem_2IUtKpN5uYV4VQC8uQB82w" target="_blank" rel="noopener noreferrer">Volunteer</a></li>
-            <li><a href="/resources">Resources</a></li>
-            <li><a href="/newsletter">Newsletter</a></li>
-            <li><a href="/events">Events</a></li>
+            <li><NavLink to="/resources">Resources</NavLink></li>
+            <li><NavLink to="/newsletter">Newsletter</NavLink></li>
+            <li><NavLink to="/events">Events</NavLink></li>
           </ul>
         </div>
 
