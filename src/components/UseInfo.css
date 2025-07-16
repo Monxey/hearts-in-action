@@ -1,0 +1,22 @@
+@import '../App.css';
+
+.use-info-card {
+    background-color: var(--brand-dark-alt);
+    padding: 2rem;
+    border-radius: 5%;
+    border: 0.2rem solid var(--brand-dark-outline);
+    width: 100%;
+}
+
+.use-info-desc {
+    color: var(--gray-primary);
+    text-align: start;
+}
+
+.info-header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-align: start;
+    gap: 2rem;
+}

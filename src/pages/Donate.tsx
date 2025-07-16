@@ -1,4 +1,6 @@
 import DonationInfo from "../components/DonationInfo";
+import SecureInfo from "../components/SecureInfo";
+import UseInfo from "../components/UseInfo";
 import styles from "./Donate.module.css"
 import { useState } from "react";
 function Donate() {
@@ -82,8 +84,8 @@ function Donate() {
                 </div>
                 <div className={styles['donate-info']}>
                     <DonationInfo/>
-                    <div className={styles.card}></div>
-                    <div className={styles.card}></div>
+                    <SecureInfo/>
+                    <UseInfo/>
                 </div>
             </div>
         </section>

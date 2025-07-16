@@ -32,7 +32,6 @@ const DonationProgress: React.FC<DonationProgressProps> = ({ current, goal }) =>
                     }}
                 />
             </div>
-
         </div>
     );
 };
