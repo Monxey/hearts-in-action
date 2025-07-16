@@ -10,8 +10,9 @@
   --brand-dark: rgb(20, 20, 20);
   --brand-accent: rgb(242, 242, 242);
   --brand-dark-alt: rgb(18, 18, 37);
+  --brand-dark-outline: rgb(46, 46, 92);
 
-  --gray-primary: rgb(209, 209, 209);
+  --gray-primary: rgb(177, 177, 177);
 }
 
 body {

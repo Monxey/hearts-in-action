@@ -1,0 +1,31 @@
+.info-header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-align: start;
+    gap: 5%;
+}
+
+.value-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.value-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.donate-info-card {
+    background-color: var(--brand-dark-alt);
+    padding: 2rem;
+    border-radius: 5%;
+    border: 0.2rem solid var(--brand-dark-outline);
+    width: 100%;
+}

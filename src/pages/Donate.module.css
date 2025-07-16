@@ -1,0 +1,124 @@
+@import '../App.css';
+
+.donate-layout {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    max-width: 100%;
+}
+
+.donate-system {
+    font-size: 2rem;
+}
+
+.help-message {
+    font-size: 1.25rem;
+    color: var(--gray-primary);
+    margin: 1rem 0rem 2rem;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 1.5rem; /* space between buttons */
+    margin: 0 auto;
+}
+
+.dollar-desc {
+    color: var(--gray-primary);
+    font-size: 1rem;
+}
+
+.sign-pos {
+    position: absolute;
+    left: 1.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.custom-amount-card {
+    background-color: var(--brand-dark);
+    border: 0.1rem solid var(--brand-dark-outline);
+    padding: 1rem 2.5rem;
+    width: 100%;
+}
+
+.input-container {
+    position: relative;
+    max-width: 100%;
+    margin: 1rem 0;
+}
+
+.donor-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 0.5rem; /* space between buttons */
+}
+
+.donate-button {
+    width: 100%;
+    font-size: 1rem;
+    border: 0.1rem solid var(--brand-dark-outline);
+}
+
+.donor-input {
+    background-color: var(--brand-dark);
+    border: 0.1rem solid var(--brand-dark-outline);
+    padding: 1rem 2.5rem;
+    margin: 0;
+}
+
+.donation-btn {
+  padding: 1.5rem 6rem;
+  font-size: 1.25rem;
+  background-color: var(--brand-dark);
+  border: 0.1rem solid var(--brand-dark-outline);
+  color: white;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.donation-btn:hover {
+  background-color: var(--brand-dark-outline);
+}
+
+.donate-card {
+    background-color: var(--brand-dark-alt);
+    padding: 4rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid var(--brand-dark-outline);
+}
+
+.donate-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.card {
+    background-color: var(--brand-dark-alt);
+    padding: 2rem;
+    border-radius: 5%;
+    border: 0.2rem solid var(--brand-dark-outline);
+    width: 100%;
+}
+
+.stripe-placeholder {
+  border: 0.15rem dashed var(--brand-dark-outline);
+  padding: 4rem;
+  text-align: center;
+  color: var(--gray-primary);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  margin: 2rem auto;
+}
+
+.info-header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-align: start;
+    gap: 5%;
+}
+
+
