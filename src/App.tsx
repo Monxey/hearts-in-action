@@ -4,7 +4,6 @@ import Home from './pages/Home.tsx';
 import About from './pages/About.tsx';
 import Donate from './pages/Donate.tsx';
 import Team from './pages/Team.tsx';
-import AI_Census from './pages/AI_Census.tsx';
 import Resources from './pages/Resources.tsx';
 import Header from './components/Header'
 import Footer from './components/Footer'
