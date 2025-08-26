@@ -22,7 +22,6 @@ function App() {
       <Route path="/about" element={<About />} />   {/* another page */}
       <Route path="/donate" element={<Donate />} />
       <Route path="/team" element={<Team />} />
-      <Route path="/ai" element={<AI_Census />} />
       <Route path="/resources" element={<Resources />}/>
       <Route path="/newsletter" element={<Newsletter />}/>
       <Route path="/events" element={<Events />}/>

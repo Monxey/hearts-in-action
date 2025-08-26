@@ -17,7 +17,6 @@ export default function Header() {
           <NavLink to="/about" className="nav-link">About</NavLink>
           <NavLink to="/donate" className="nav-link">Donate</NavLink>
           <NavLink to="/team" className="nav-link">Team</NavLink>
-          <NavLink to="/ai" className="nav-link">AI Census</NavLink>
         </nav>
       </div>  
     </header>
