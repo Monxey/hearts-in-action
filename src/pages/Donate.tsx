@@ -21,13 +21,23 @@ function Donate() {
         setSelectedAmount(isNaN(numeric) ? null : numeric);
     };
 
-    const handleDonate = () => {
+    const handleDonate = async () => {
         if (selectedAmount && selectedAmount > 0) {
-        alert(`Donating $${selectedAmount.toFixed(2)}`);
-        alert('ERR: Donation payment system not integrated')
-        // TODO: Send to Stripe or PayPal
-        } else {
-        alert("Please enter or select a valid amount.");
+            alert(`Donating $${selectedAmount.toFixed(2)}`);
+            alert('ERR: Donation payment system not integrated');
+            const res = await fetch("/api/create-checkout-session", { 
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ amount: selectedAmount })
+             });
+            const data = await res.json();
+
+            if (data.url) {
+                window.location.href = data.url;
+            }
+        } 
+        else {
+            alert("Please enter or select a valid amount.");
         }
     };
 

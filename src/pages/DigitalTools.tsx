@@ -1,6 +1,6 @@
 
 
-function AI_Census() {
+function DigitalTools() {
     return ( 
     <>
         <section className="main-background">
@@ -10,4 +10,4 @@ function AI_Census() {
     )
 }
 
-export default AI_Census;
+export default DigitalTools;

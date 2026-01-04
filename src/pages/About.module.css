@@ -1,17 +1,46 @@
 @import '../App.css';
 
 .h1 {
-    color: rgb(0, 0, 0);
+    color: var(--brand-accent);
     font-size: 2rem;
-    margin: 2rem;
-    background-color: white;
-    border-radius: 1rem;
+    text-align: left;
+}
+
+.team-overview {
+    width: 50%;
+    margin: 0 auto 2rem;
+    font-size: 1.25rem;
+    border-radius: 2rem;
+}
+
+.team-members {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .description {
-    color: white;
+    color: var(--gray-primary);
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    margin: 0 10vw 0 10vw;
+}
+
+.body-columns {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.body-team {
+    background-color: black;
+    padding: 2rem;
+}
+
+.main-column-left {
+    background: linear-gradient(to bottom, var(--brand-dark), black);
+    border-right: 1px solid;
+    border-image: linear-gradient(to bottom, white, black) 1;
 }
 
 .approach-grid {
@@ -20,16 +49,15 @@
 }
 
 .approach-card {
-    background-color: rgba(140, 160, 28, 0.3);
-    border-radius: 1rem;
-    border: 0.1rem solid white;
+    background-color: var(--brand-dark);
+    border-radius: 0.5rem;
     padding: 1.5rem;
+    border: 1px solid silver;
 }
 
 .approach-header {
     margin: 0rem 0rem 2rem;
-    font-size: 1.75rem;
-    background-color: var(--brand-dark-alt);
+    font-size: 1.5rem;
     text-align: center;
     border-radius: 1rem;
     padding: 0.25rem;
@@ -40,9 +68,7 @@
 }
 
 .content {
-    padding: 4rem 0% 0%;
-    background: var(--brand-primary);
-    margin: 0%;
+    background-color: black;
 }
 
 .list-item {
@@ -50,18 +76,23 @@
 }
 
 .first-background {
-    padding: 2rem 12rem;
+    padding: 8rem 0 2rem;
     background: linear-gradient(to bottom, var(--brand-dark), var(--brand-primary-dark));
 }
 
 .second-background {
-    padding: 2rem 8rem;
-    background: linear-gradient(to bottom, var(--brand-primary-dark), var(--brand-secondary), var(--brand-primary-dark));
+    padding: 2rem 0;
+    background-color: var(--brand-primary-dark);
+}
+
+.border {
+    border: 1px solid var(--brand-primary);
+    width: 80%;
 }
 
 .third-background {
-    padding: 2rem 12rem 2rem;
-    background: linear-gradient(to bottom, var(--brand-primary-dark), var(--brand-dark));
+    padding: 2rem 0;
+    background: linear-gradient(to bottom, var(--brand-primary-dark), black);
 }
 
 .team-button {
@@ -72,4 +103,12 @@
     display: block;
     width: 12rem;
     margin: 4rem auto;
+}
+
+.team-header {
+    font-size: 2rem;
+}
+
+.image-dim {
+    width: 100%;
 }

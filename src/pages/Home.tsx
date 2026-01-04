@@ -1,6 +1,6 @@
 import '../App.css';
 import './Home.css';
-import image_7 from "../assets/image_7.png";
+import main_image from "../assets/volunteers_in_action/image1.jpeg";
 import { BookOpenText, Heart, Users, GraduationCap, Utensils } from "lucide-react";
 import { NavLink } from 'react-router-dom';
 
@@ -12,21 +12,17 @@ function Home() {
             <section className='gradient-section'>
                 <div className='container'>
                     <div className='grid'>
-                        <div style={{maxWidth: '40rem'}}>
-                            <h1 className='home-h1' style={{textAlign: 'left', fontSize: '2.25rem'}}>Fighting Food Insecurity at{" "}
-                            <span style={{color: '#f08080'}}>UMD</span>
+                        <div>
+                            <h1 className='home-h1' style={{textAlign: 'left', fontSize: '2.25rem'}}>
+                                Welcome to Hearts In Action!
                             </h1>
                             <p style={{fontSize: '1.5rem', textAlign: 'left', color: 'var(--gray-primary)', borderBottom: '0.1rem solid white', paddingBottom: '4rem'}}>
-                            Over 27% of UMD students face food insecurity. That's 1 in 4 of our peers 
-                            struggling to afford their next meal. Join Hearts in Action to break this cycle.
+                            We're a student led non-profit dedicated to serving our community by tackling resource insecurity 
+                            in the College Park area. Join Hearts in Action and contribute to our cause!
                             </p>
                         </div>
                         <div style={{position: 'relative'}}>
-                            <img src={image_7} alt="image_7" style={{borderRadius: '0.5rem', border: '0.1rem solid white', width: '40rem'}} />
-                            <div className="caption">
-                                <span style={{fontSize: '1.5rem', color: '#f08080'}}><b>27%</b></span>
-                                <div>of UMD students face food insecurity</div>
-                            </div>
+                            <img src={main_image} alt="image_7" style={{borderRadius: '0.5rem', border: '0.1rem solid white', width: '40rem'}} />
                         </div>
                     </div>
                 </div>

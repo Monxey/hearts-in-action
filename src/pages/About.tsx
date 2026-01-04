@@ -1,123 +1,121 @@
 import styles from './About.module.css'
-import image_6 from '../assets/image_6.png'
-import food_image from '../assets/food_rations_stock.jpg'
 import { Users, Timer, University } from 'lucide-react'
 import Student from '../assets/student.png'
-import { NavLink } from 'react-router-dom'
-import Logo from '../assets/hia_logo.png'
+import './Home.css';
+import TeamMember from '../components/TeamMember';
+import Dennis from '../assets/people/Dennis.png';
+import Kian from '../assets/people/Kian.png';
+import Diego from '../assets/people/Diego.png';
+import Tiana from '../assets/people/Tiana.png';
+import Grady from '../assets/people/Grady.png';
+import Isaac from '../assets/people/Isaac.png';
+import image0 from '../assets/volunteers_in_action/image0.jpeg'
+import image3 from '../assets/volunteers_in_action/image3.jpeg'
+import image5 from '../assets/volunteers_in_action/image5.jpeg'
 
 function About() {
+	const members = [
+		{
+      name: 'Dennis Tudor',
+      role: 'President and Head of Logistics',
+      bio: 'Dennis is responsible for the overarching operational planning and strategic direction of all Hearts in Action initiatives. He meticulously oversees resource allocation, streamlines processes, and ensures the smooth and efficient execution of every project, from initial concept to final delivery. His leadership is pivotal in ensuring our efforts reach those in need effectively and sustainably.',
+      photoUrl: Dennis,
+    },
+    {
+      name: 'Kian Mercado',
+      role: 'President and Head of Recruitment',
+      bio: 'Kian focuses on expanding and nurturing our volunteer base. He is instrumental in developing and implementing recruitment strategies, fostering a welcoming and inclusive environment for all members, and ensuring that our organization attracts and retains passionate and dedicated students. Kian\'s efforts are key to building and maintaining strong, engaged teams.',
+      photoUrl: Kian,
+    },
+		{
+      name: 'Diego Varisco',
+      role: 'Event Coordinator',
+      bio: 'Diego takes the lead in planning and executing all Hearts in Action events. From large-scale kick-off gatherings and donation drives to intimate holiday celebrations, he ensures that every event is engaging, well-organized, and achieves its intended impact, fostering a positive experience for both volunteers and beneficiaries.',
+      photoUrl: Diego,
+    },
+    {
+      name: 'Tiana Trinh',
+      role: 'Secretary',
+      bio: 'Tiana is essential for maintaining the organizational flow and record-keeping. She is responsible for documenting official meeting minutes, managing internal and external communications, handling correspondence, and ensuring that all organizational records are accurate and accessible. Her attention to detail supports effective coordination across the team.',
+      photoUrl: Tiana,
+    },
+		{
+      name: 'Grady Cronkite',
+      role: 'Treasurer',
+      bio: 'Grady manages all financial aspects of Hearts in Action. His responsibilities include meticulous fundraising efforts, comprehensive budgeting, and diligent tracking of all expenses and revenues. Grady ensures the organization\'s fiscal responsibility and transparency, maximizing our impact by effectively managing our financial resources.',
+      photoUrl: Grady,
+    },
+    {
+      name: 'Isaac Plowman',
+      role: 'Website & Digital Tools',
+      bio: 'Isaac is responsible for managing and enhancing Hearts in Action\'s online presence. He oversees the development and maintenance of our website, implements digital marketing strategies, and leverages various digital tools to promote our initiatives, engage with our community, and expand our outreach efforts, ensuring our message reaches a wider audience.',
+      photoUrl: Isaac,
+    },
+	];
+
 	return (
 		<>
-			<div className={styles.content}>
-				{/*The Problem*/}
-				<div>
-					<section>
-						<div className={styles['first-background']}>
-							<div style={{ margin: '0 30%' }}>
-								<h1 className={styles['h1']}>
-									The Problem
-								</h1>
-							</div>
-
-							<div className={styles['description']}>
-								<p>
-									Many children and families from underserved backgrounds face daily
-									challenges due to a profound lack of access to basic resources. This includes
-									fundamental necessities such as nutritious food, appropriate clothing for
-									various seasons, essential educational supplies, and often, critical emotional
-									support systems. These systemic barriers do not merely create temporary
-									discomfort; they actively hinder personal growth, significantly limit
-									educational opportunities, and impede full participation within the
-									community. The ripple effects of these challenges can perpetuate cycles of
-									disadvantage, making it incredibly difficult for individuals and families to
-									break free.
-								</p>
-								<p>
-									Furthermore, even within the seemingly supportive environment of college
-									campuses, food insecurity is a prevalent and often overlooked issue. Students
-									frequently experience hunger, particularly during late-night study sessions or
-									in the long stretches between classes, when access to convenient and
-									affordable snacks or meals is limited. This consistent lack of accessible
-									sustenance negatively impacts student well-being, diminishes cognitive
-									function, impairs academic focus, and drains energy levels, ultimately
-									affecting their ability to thrive both academically and personally.
-								</p>
-								<p>
-									Without consistent support systems or robust community-driven initiatives,
-									cycles of poverty and disadvantage tend to continue, trapping individuals and
-									families in a difficult predicament. Our organization, Hearts in Action, aims to
-									strategically disrupt this cycle—both within the broader off-campus
-									community and directly among our own student body. By addressing these
-									critical resource gaps and fostering a culture of mutual aid, we strive to create
-									lasting positive change and build a more equitable environment for all.
-								</p>
-							</div>
-						</div>
-					</section>
-					{/*Our Mission*/}
-					<section>
-						<div className={styles['second-background']}>
-							<div style={{ margin: '0 30%' }}>
-								<h1 className={styles['h1']} >
-									Our Mission
-								</h1>
-							</div>
-							<div className={styles['description']} style={{ backgroundColor: 'var(--brand-dark-alt)', borderRadius: '1rem', padding: '2rem' }}>
-								<p>
-									Hearts in Action is steadfastly committed to uplifting our community by
-									organizing dynamic, student-driven service initiatives that directly address the
-									material and emotional needs of those most at risk. Our comprehensive
-									approach encompasses a variety of impactful programs designed to provide
-									immediate relief and foster long-term stability.
-								</p>
-								<p>
-									Through carefully organized clothing drives, we ensure individuals have
-									access to dignity-preserving attire. Our food distributions combat hunger and
-									provide essential nourishment. During holiday periods, our toy donations bring joy and a sense of belonging to families who might
-									otherwise go without. Additionally, through educational supply donations, we
-									equip students with the tools they need to succeed in their academic
-									journeys, paving the way for brighter futures.
-								</p>
-								<p>
-									Beyond the tangible support we provide to underserved families, a core tenet
-									of our mission is to empower students themselves. We actively encourage
-									and enable students to take meaningful leadership roles within our
-									organization, providing them with invaluable experience in project
-									management, team collaboration, and community engagement. This
-									cultivates a vibrant culture of empathy, advocacy, and social responsibility on
-									campus, preparing the next generation of leaders to make a profound
-									difference in the world.
-								</p>
-								<p>
-									Our work is rooted in the belief that small acts of kindness, when organized
-									and amplified by collective effort, can create monumental change. We strive
-									to be a beacon of hope, inspiring both givers and receivers to believe in the
-									power of community and compassionate action.
-                </p>
-                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '4rem' }}>
-                  <img src={image_6} style={{ borderRadius: '1rem', maxWidth: '30rem', margin: '2rem' }} />
-                  <img src={food_image} style={{ borderRadius: '1rem', maxWidth: '30rem', margin: '2rem' }} />
-                </div>
-              </div>
-						</div>
-					</section>
+		<div className={styles['body-columns']}>
+			<div className={styles['main-column-left']}>
+				<div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '0' }}>
+					<img src={image0} className={styles['image-dim']} />
+					<img src={image3} className={styles['image-dim']} />
+					<img src={image5} className={styles['image-dim']} />
 				</div>
-				{/*Our Approach*/}
-				<section style={{ margin: '0 auto' }}>
+			</div>
+
+			<div>
+				<div className={styles.content}>
+					{/*The Problem*/}
+					<div className={styles['first-background']}>
+						<div className={styles['description']}>
+							<h1 className={styles['h1']}>
+								The Problem
+							</h1>
+							<p>
+								Without consistent support systems or robust community-driven initiatives,
+								cycles of poverty and disadvantage tend to continue, trapping individuals and
+								families in a difficult predicament. Our organization, Hearts in Action, aims to
+								strategically disrupt this cycle—both within the broader off-campus
+								community and directly among our own student body. By addressing these
+								critical resource gaps and fostering a culture of mutual aid, we strive to create
+								lasting positive change and build a more equitable environment for all.
+							</p>
+						</div>
+					</div>
+					{/*Our Mission*/}
+					<div className={styles['second-background']}>
+						<div className={styles['border']} style={{margin: '0 auto 4rem'}}/>
+						<div className={styles['description']}>
+							<h1 className={styles['h1']} >
+								Our Mission
+							</h1>
+							<p>
+								Hearts in Action is committed to uplifting our community by
+								organizing student-driven service initiatives that directly address the
+								material and emotional needs of our community. Our approach 
+								involves a variety of impactful programs designed to provide
+								aid and assist those in need.
+							</p>
+							<p>
+								Our main beliefs revolve around acts of kindness. Each event we execute 
+								is done to ensure we connect and help every indiviudal that may be struggling. 
+								Using this way of thinking, when providing service, we hope
+								to send a message to our community, inspiring others to contribute.
+							</p>
+						</div>
+						<div className={styles['border']} style={{margin: '4rem auto 0'}}/>
+					</div>
+					{/*Our Approach*/}
 					<div className={styles['third-background']}>
-						<div style={{ margin: '0 30%' }}>
+						<div className={styles['description']} style={{ marginBottom: '4rem' }}>
 							<h1 className={styles['h1']}>
 								Our Approach
 							</h1>
-						</div>
-
-						<div className={styles['description']} style={{ marginBottom: '4rem' }}>
 							<p>
-								Hearts in Action operates on a structured, semester-based strategy designed
-								to ensure both sustainability and broad student engagement. This methodical
-								approach allows us to maximize our impact and foster a consistent rhythm of
-								service throughout the academic year.
+								Hearts in Action operates on a semster based schedule designed
+								to ensure sustainability and student engagement. We maintain our
+								impact via the following traits:
 							</p>
 							<div className={styles['approach-grid']}>
 								<div className={`${styles['list-item']} ${styles['approach-card']}`}>
@@ -126,12 +124,10 @@ function About() {
 										<Users />
 									</div>
 									<div>
-										At the commencement of each semester, we
-										host inclusive general meetings. These gatherings serve as vital forums
-										where students are encouraged to pitch new ideas for initiatives, discuss
-										community needs, and collectively vote on which campaigns to pursue.
-										This democratic process ensures that our efforts are driven by student
-										passion and resonate with the needs identified by our members.
+										At the start of each semester, we
+										host general body meetings, welcome to all students. During these gatherings
+										we collaborate and brainstorm new ideas for initiatives and ways of providing service 
+										to our community whether its clothing drives, gift donations, or meal preparation.
 									</div>
 								</div>
 								<div className={`${styles['list-item']} ${styles['approach-card']}`}>
@@ -139,11 +135,11 @@ function About() {
 										Focused Initiatives
 										<Timer />
 									</div>
-									To maintain efficacy and ensure thorough execution,
-									we commit to executing 2–3 highly targeted campaigns every two
-									months. This focused approach allows our teams to dedicate ample time
+									To maintain our efficacy and community service,
+									we strive to execute 2–3 campaigns every semester.
+									This focused approach allows our teams to dedicate time
 									and resources to each project, ensuring they are well-planned,
-									effectively promoted, and deliver maximum impact to our beneficiaries.
+									effectively promoted, and provide the desired change to our community.
 								</div>
 							</div>
 							<div className={styles['approach-grid']}>
@@ -152,42 +148,44 @@ function About() {
 										Student Leadership
 										<img src={Student} style={{ width: '5%' }} />
 									</div>
-									Our volunteers are not simply participants;
-									they are actively divided into specialized sub-teams, each with distinct
+									Our volunteers are divided into specialized sub-teams, each with distinct
 									responsibilities. These teams typically include groups dedicated to
-									promotion and outreach, fundraising efforts, logistical planning and
-									execution, and building strategic partnerships. This structure empowers
-									students with practical leadership experience and fosters a strong sense
-									of ownership and accountability
+									promotion and outreach, fundraising efforts, and logistics. These 
+									responsibilities empower students to gain leadership experience and 
+									develop a higher sense of accountability.
 								</div>
 								<div className={`${styles['list-item']} ${styles['approach-card']}`}>
 									<div className={styles['approach-header']}>
 										Community Engagement
 										<University />
 									</div>
-									A cornerstone of our success lies in our
-									unwavering commitment to collaborating with local shelters, schools,
-									food banks, and other nonprofit organizations. By working hand-inhand with established community partners, we gain invaluable insights
-									into real-time needs, ensuring that our efforts are not only meaningful
-									but also strategically impactful, avoiding duplication and maximizing
-									resource utilization. This collaborative spirit ensures our initiatives are
-									truly responsive to the community we serve.
+									Our success lies in our commitment to collaborating with local shelters, schools,
+									food banks, and other nonprofit organizations. By working with established community partners,
+									we gain invaluable insight and resources to further develop our organization. 
+									Our collaborative methods ensure our initiatives positively impact the community we serve.
 								</div>
 							</div>
 						</div>
-
-						<div style={{ margin: '0 30%' }}>
-							<h1 className={styles['h1']}>
-								Who We Are
-							</h1>
-						</div>
-						<NavLink to='/team' className={`volunteer button-transition ${styles['team-button']}`}>
-							<div>Meet the Team</div>
-							<img src={Logo} style={{ width: '4rem' }} />
-						</NavLink>
 					</div>
-				</section>
+				</div>
 			</div>
+		</div>
+		<div className={styles['body-team']}>
+			<div className='content'>
+				<div className={styles.background}>
+					<h1 style={{fontSize: '2.5rem'}}>Meet the Team</h1>
+					<div className={styles['team-overview']}>
+						Our organization is guided by a dedicated and passionate leadership team, 
+						each member bringing unique skills and a shared commitment to our mission.
+					</div>
+					<section className={styles['team-members']}>
+						{members.map((member, idx) => (
+				<TeamMember key={idx} name={member.name} role={member.role} bio={member.bio} photoUrl={member.photoUrl}/>
+				))}
+					</section>
+				</div>
+			</div>
+		</div>
 		</>
 	)
 }
