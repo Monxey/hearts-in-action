@@ -76,7 +76,7 @@
 }
 
 .first-background {
-    padding: 8rem 0 2rem;
+    padding: 6rem 0 2rem;
     background: linear-gradient(to bottom, var(--brand-dark), var(--brand-primary-dark));
 }
 

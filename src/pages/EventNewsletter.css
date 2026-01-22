@@ -1,0 +1,39 @@
+@import '../App.css';
+
+.body {
+    text-align: left;
+    max-width: 60%;
+    margin: 0 auto;
+}
+.event-background {
+    background: linear-gradient(to bottom, var(--brand-dark), var(--brand-primary-dark), var(--brand-dark));
+    padding: 4rem;
+}
+
+.event-card {
+    background-color: var(--brand-dark-alt);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid var(--brand-dark-outline);
+    width: 40%;
+}
+
+.event-calendar {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: left;
+    gap: 1rem
+}
+
+.event-button {
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+    background-color: var(--brand-dark);
+    border: 2px solid var(--brand-dark-outline)
+}
+
+.event-image {
+    max-width: 100%;
+    margin: 0 auto;
+}

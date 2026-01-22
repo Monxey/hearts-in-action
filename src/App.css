@@ -33,8 +33,7 @@ body {
 
 .main-background {
   background: linear-gradient(to bottom, var(--brand-dark), var(--brand-primary), var(--brand-dark));
-  padding: 4rem;
-  margin-top: 4rem;
+  padding: 6rem;
 }
 
 .flex-column-center {

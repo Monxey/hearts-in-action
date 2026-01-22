@@ -7,8 +7,7 @@ import Resources from './pages/Resources.tsx';
 import Header from './components/Header'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop.tsx';
-import Newsletter from './pages/Newsletter.tsx';
-import Events from './pages/Events.tsx';
+import EventNewsletter from './pages/EventNewsletter.tsx';
 import DigitalTools from './pages/DigitalTools.tsx';
 
 function App() {
@@ -22,8 +21,7 @@ function App() {
       <Route path="/donate" element={<Donate />} />
       <Route path="/digital-tools" element={<DigitalTools />} />
       <Route path="/resources" element={<Resources />}/>
-      <Route path="/newsletter" element={<Newsletter />}/>
-      <Route path="/events" element={<Events />}/>
+      <Route path="/event-newsletter" element={<EventNewsletter />}/>
     </Routes>
     <Footer />
     </>

@@ -156,7 +156,7 @@
 .gradient-section {
   background: linear-gradient(to bottom, var(--brand-primary), var(--brand-dark));
   color: white;
-  padding: 8rem; 
+  padding: 4rem; 
 }
 
 .grid {
@@ -165,7 +165,7 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  margin: 0rem auto;
+  margin: 2rem auto;
 }
 
 .caption {

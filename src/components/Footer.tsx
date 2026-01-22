@@ -10,8 +10,8 @@ function Footer() {
         {/* Logo and Org Info */}
         <div className="footer-left">
           <div className='title'>
-            <img src={logo} alt="Hearts in Action logo" className="logo" />
             <h2>Hearts in Action</h2>
+            <img src={logo} alt="Hearts in Action logo" style={{height: 'auto', maxWidth: '2rem'}}/>
           </div>  
           <p className="description">
             Fighting food and material insecurity in the UMD community through student-led initiatives.
@@ -24,8 +24,7 @@ function Footer() {
           <ul>
             <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd6an51-ZwG-ECVu6EZjxhaqs5CFYUOHxMBwW6c4P9KbUDc1A/viewform?fbclid=PAZXh0bgNhZW0CMTEAAafYZR3yFbKsiGBYyKinROG9mZMdK5NcPPQp-XY7oI2LvQPvq0SfG4eTXohVEw_aem_2IUtKpN5uYV4VQC8uQB82w" target="_blank" rel="noopener noreferrer">Volunteer</a></li>
             <li><NavLink to="/resources">Resources</NavLink></li>
-            <li><NavLink to="/newsletter">Newsletter</NavLink></li>
-            <li><NavLink to="/events">Events</NavLink></li>
+            <li><NavLink to="/event-newsletter">Events</NavLink></li>
           </ul>
         </div>
 

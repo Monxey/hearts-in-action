@@ -113,7 +113,7 @@ function About() {
 								Our Approach
 							</h1>
 							<p>
-								Hearts in Action operates on a semster based schedule designed
+								Hearts in Action operates on a semester based schedule designed
 								to ensure sustainability and student engagement. We maintain our
 								impact via the following traits:
 							</p>

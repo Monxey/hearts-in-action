@@ -43,7 +43,7 @@ function Donate() {
 
     return ( 
     <>
-        <section className="main-background">
+        <div className="main-background">
             <div className={styles['donate-layout']}>
                 <div className={styles['donate-system']}>
                     Make a Donation
@@ -98,7 +98,7 @@ function Donate() {
                     <UseInfo/>
                 </div>
             </div>
-        </section>
+        </div>
     </>
     )
 }

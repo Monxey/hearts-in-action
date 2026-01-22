@@ -1,10 +1,7 @@
 .header {
-  padding: 0.2rem;
   background-color: var(--brand-dark);
   border-bottom: 0.1rem solid var(--brand-secondary);
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   z-index: 1000;
 }
@@ -12,13 +9,13 @@
 .header-content {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  gap: 16rem;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
 }
 
 .nav {
   display: flex;
-  gap: 2rem;       /* increase space between links */
   align-items: center;
 }
 
@@ -26,24 +23,16 @@
   color: white;
   text-decoration: none;
   font-weight: bold;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 0.75rem 2rem;
   transition: background-color 0.3s;
   align-items: center;
   white-space: nowrap;
-  border-radius: 0.5rem;
 }
 
 /* On hover */
-.nav-link:hover {
-  background-color: rgba(255, 0, 0, 0.692);
-  border-radius: 0.5rem;
-}
-
 /* When link matches current route */
-.nav-link.active {
+.nav-link:hover, .nav-link.active {
   background-color: rgb(87, 0, 0);
-  border-radius: 0.25rem;
-  border-bottom: 0.1rem solid #ffffff;
 }
 
 .logoContainer {
@@ -54,7 +43,8 @@
 }
 
 .logo {
-  height: 4rem;
+  max-width: 5%;
+  height: auto;
 }
 
 .link {
