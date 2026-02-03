@@ -16,37 +16,37 @@ function About() {
 		{
       name: 'Dennis Tudor',
       role: 'President and Head of Logistics',
-      bio: 'Dennis is responsible for the overarching operational planning and strategic direction of all Hearts in Action initiatives.',
+      bio: 'Responsible for the overarching operational planning and strategic direction of all Hearts in Action initiatives.',
       photoUrl: Dennis,
     },
     {
       name: 'Kian Mercado',
       role: 'President and Head of Recruitment',
-      bio: 'Kian focuses on expanding and nurturing our volunteer base.',
+      bio: 'Focuses on expanding and nurturing our volunteer base.',
       photoUrl: Kian,
     },
 		{
       name: 'Diego Varisco',
       role: 'Event Coordinator',
-      bio: 'Diego takes the lead in planning and executing all Hearts in Action events.',
+      bio: 'Takes the lead in planning and executing all Hearts in Action events.',
       photoUrl: Diego,
     },
     {
       name: 'Tiana Trinh',
       role: 'Secretary',
-      bio: 'Tiana is essential for maintaining the organizational flow and record-keeping.',
+      bio: 'Essential for maintaining the organizational flow and record-keeping.',
       photoUrl: Tiana,
     },
 		{
       name: 'Grady Cronkite',
       role: 'Treasurer',
-      bio: 'Grady manages all financial aspects of Hearts in Action.',
+      bio: 'Manages all financial aspects of Hearts in Action.',
       photoUrl: Grady,
     },
     {
       name: 'Isaac Plowman',
       role: 'Website & Digital Tools',
-      bio: 'Isaac is responsible for managing and enhancing Hearts in Action\'s online presence.',
+      bio: 'Responsible for managing and enhancing Hearts in Action\'s online presence.',
       photoUrl: Isaac,
     },
 	];
@@ -148,10 +148,6 @@ function About() {
 			<div className='content'>
 				<div className={styles.background}>
 					<h1 style={{fontSize: '2.5rem'}}>Meet the Team</h1>
-					<div className={styles['team-overview']}>
-						Our organization is guided by a dedicated and passionate leadership team, 
-						each member bringing unique skills and a shared commitment to our mission.
-					</div>
 					<div className={styles['team-content']}>
 						<div className={styles['team-members']}>
 							{members.map((member, idx) => (
