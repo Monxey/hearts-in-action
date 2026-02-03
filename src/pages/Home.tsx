@@ -14,7 +14,7 @@ function Home() {
                     <div className='grid'>
                         <div>
                             <h1 className='home-h1' style={{textAlign: 'left', fontSize: '2.25rem'}}>
-                                Welcome to Hearts In Action!
+                                Welcome to <span>Hearts In Action</span>!
                             </h1>
                             <p style={{fontSize: '1.5rem', textAlign: 'left', color: 'var(--gray-primary)', borderBottom: '0.1rem solid white', paddingBottom: '4rem'}}>
                             We're a student led non-profit dedicated to serving our community by tackling resource insecurity 

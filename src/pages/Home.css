@@ -22,7 +22,7 @@
 }
 
 .red-background {
-    background: linear-gradient(to top, var(--brand-primary), var(--brand-dark));
+    background: linear-gradient(to top, var(--brand-dark-alt), var(--brand-dark));
 }
 
 .header-layout {
@@ -151,10 +151,23 @@
 .home-h1 {
     color: white;
     font-size: 2rem;
+    animation: fadeDown 1s ease forwards;
+    opacity: 0;
+}
+
+.home-h1 span {
+    color: var(--brand-secondary)
+}
+
+@keyframes fadeDown {
+  to {
+    opacity: 1;
+    transform: translateY(1rem);
+  }
 }
 
 .gradient-section {
-  background: linear-gradient(to bottom, var(--brand-primary), var(--brand-dark));
+  background: linear-gradient(to bottom, var(--brand-dark-alt), var(--brand-dark));
   color: white;
   padding: 4rem; 
 }

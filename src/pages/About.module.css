@@ -1,7 +1,7 @@
 @import '../App.css';
 
 .h1 {
-    color: var(--brand-accent);
+    color: var(--brand-secondary);
     font-size: 2rem;
     text-align: left;
 }
@@ -14,27 +14,103 @@
 }
 
 .team-members {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 2rem auto;
 }
 
-.description {
-    color: var(--gray-primary);
+.team-content {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.slogan-background {
+    min-height: 20vh;
+    display: grid;
+    place-items: center;
+    background-color: var(--brand-dark);
+    overflow: hidden;
+}
+
+.slogan span {
+  background: linear-gradient(90deg, var(--brand-primary), var(--brand-secondary) 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.slogan h1 {
+    color: var(--brand-secondary);
+    font-size: 2rem;
+}
+
+.slogan {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 0.1rem;
+    opacity: 0;
+    animation: fadeDown 1s ease forwards;
+    text-align: left;
+}
+
+@keyframes fadeDown {
+  to {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+}
+
+.main-about-background {
+  background-color: var(--brand-dark);
+  padding: 1rem 0 0;
+}
+
+.about-background {
+    background: linear-gradient(90deg, black, var(--brand-dark-blue));
+    padding: 2rem 0;
+    width: 100%;
+    height: auto;
+}
+
+.about-description {
     text-align: left;
     font-size: 1.25rem;
-    margin: 0 10vw 0 10vw;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 80%;
+    margin: 2rem auto;
 }
 
-.body-columns {
-    display: grid;
-    grid-template-columns: 30% 70%;
+.mission-background {
+    background: linear-gradient(90deg, var(--brand-dark-blue), black);
+    padding: 2rem 0;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    
+}
+
+.approach-background {
+    background-color: var(--brand-dark);
+    margin: 0 auto;
+    padding: 2rem 0;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid var(--brand-secondary);
+}
+
+.approach-description {
+    text-align: left;
+    font-size: 1.25rem;
+    max-width: 60%;
+    margin: 0 auto;
 }
 
 .body-team {
-    background-color: black;
-    padding: 2rem;
+    background: radial-gradient(circle at center, var(--brand-dark), var(--brand-dark-blue));
+    padding: 4rem;
 }
 
 .main-column-left {
@@ -68,31 +144,17 @@
 }
 
 .content {
-    background-color: black;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .list-item {
     margin-bottom: 1rem;
 }
 
-.first-background {
-    padding: 6rem 0 2rem;
-    background: linear-gradient(to bottom, var(--brand-dark), var(--brand-primary-dark));
-}
-
-.second-background {
-    padding: 2rem 0;
-    background-color: var(--brand-primary-dark);
-}
-
 .border {
     border: 1px solid var(--brand-primary);
     width: 80%;
-}
-
-.third-background {
-    padding: 2rem 0;
-    background: linear-gradient(to bottom, var(--brand-primary-dark), black);
 }
 
 .team-button {
@@ -110,5 +172,6 @@
 }
 
 .image-dim {
-    width: 100%;
+    max-width: 30%;
+    height: auto;
 }

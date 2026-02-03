@@ -46,7 +46,9 @@ function Donate() {
         <div className="main-background">
             <div className={styles['donate-layout']}>
                 <div className={styles['donate-system']}>
-                    Make a Donation
+                    <div className="animated">
+                        <h1 style={{textAlign: 'left', margin: '0 auto 2rem'}}>Make a Donation</h1>
+                    </div>
                     <div className={styles['help-message']}>Every dollar helps us provide meals and support to those in need</div>
                     <div className={styles['donate-card']}>
                         <div style={{textAlign: 'start', marginBottom: '2rem'}}>Choose your impact</div>

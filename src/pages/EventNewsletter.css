@@ -1,9 +1,9 @@
 @import '../App.css';
 
-.body {
+.event-body {
     text-align: left;
     max-width: 60%;
-    margin: 0 auto;
+    margin: 4rem auto;
 }
 
 .event-grid {
@@ -14,7 +14,7 @@
 }
 
 .event-background {
-    background: linear-gradient(to bottom, var(--brand-dark), var(--brand-primary-dark), var(--brand-dark));
+    background: var(--brand-dark);
     padding: 4rem;
 }
 

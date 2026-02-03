@@ -76,9 +76,11 @@ function EventNewsletter() {
 
     return ( 
     <>
-        <div className="event-background">
-            <div className="body">
-                <h1>Event Newsletter</h1>
+        <div className="main-background">
+            <div className="event-body">
+                <div className='animated'>
+                    <h1>Event Newsletter</h1>
+                </div>
                 <h2>Stay updated about our latest events and activities!</h2>
                 
                 {

@@ -1,5 +1,5 @@
 .header {
-  background-color: var(--brand-dark);
+  background-color: black;
   border-bottom: 0.1rem solid var(--brand-secondary);
   position: fixed;
   width: 100%;

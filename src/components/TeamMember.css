@@ -4,12 +4,11 @@
   display: flex;
   align-items: center;
   justify-content: start;
-  width: 50%;
   margin: 1rem;
   padding: 1rem;
   border-radius: 12px;
-  background-color: var(--brand-dark);
-  border: 0.1rem solid white;
+  background-color: var(--brand-dark-blue);
+  border: 0.1rem solid var(--brand-dark-outline);
 }
 
 .member-info {
@@ -17,13 +16,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 75%;
+    max-width: 75%;
     gap: 1rem;
 }
 
 .member-photo {
-  width: 25%;
-  height: 25%;
+  max-width: 25%;
+  height: auto;
   border-radius: 50%;
   object-fit: cover;
   margin: 2rem;
