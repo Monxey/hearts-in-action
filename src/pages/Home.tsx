@@ -22,7 +22,7 @@ function Home() {
                             </p>
                         </div>
                         <div style={{position: 'relative'}}>
-                            <img src={main_image} alt="image_7" style={{borderRadius: '0.5rem', border: '0.1rem solid white', width: '40rem'}} />
+                            <img src={main_image} alt="image_7" style={{borderRadius: '0.5rem', border: '0.1rem solid white', maxWidth: '100%'}} />
                         </div>
                     </div>
                 </div>

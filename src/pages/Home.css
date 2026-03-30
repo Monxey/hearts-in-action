@@ -195,6 +195,14 @@
 }
 
 @media (max-width: 768px) {
+  .home-h1 {
+    color: white;
+    font-size: 2rem;
+    animation: fadeDown 1s ease forwards;
+    opacity: 0;
+    max-width: 80%; 
+    margin-bottom: 2rem;
+  }
   .header-description {
     max-width: 90%;
     font-size: 1.25rem;
@@ -217,7 +225,13 @@
   }
 
   .gradient-section {
-    padding: 2rem 1rem;
+    padding: 4rem 2rem 1rem;
+    margin: 0 auto;
+  }
+
+  .container {
+    margin: 0 auto;
+    padding: 1rem;
   }
 
   .learn-more {

@@ -178,6 +178,13 @@
 }
 
 @media (max-width: 768px) {
+  .slogan-background {
+    min-height: 10vh;
+    background-color: var(--brand-dark);
+    overflow: hidden;
+    margin: 3rem auto 0;
+  }
+
   .slogan {
     max-width: 95%;
     font-size: 1.5rem;

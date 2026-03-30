@@ -99,7 +99,7 @@
 @media (max-width: 768px) {
   .event-body {
     max-width: 95%;
-    margin: 2rem auto;
+    margin: 4rem auto;
   }
 
   .event-grid {
@@ -108,5 +108,14 @@
 
   .event-background {
     padding: 2rem 1rem;
+  }
+
+  .event-button {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--brand-dark);
+    border: 2px solid var(--brand-dark-outline)
   }
 }
