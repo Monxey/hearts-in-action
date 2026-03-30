@@ -89,3 +89,19 @@ h2 {
   font-size: 0.8rem;
   color: #aaa;
 }
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  .description {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+
+  .footer-links,
+  .footer-social {
+    margin-top: 1rem;
+  }
+}

@@ -176,3 +176,45 @@
     max-width: 30%;
     height: auto;
 }
+
+@media (max-width: 768px) {
+  .slogan {
+    max-width: 95%;
+    font-size: 1.5rem;
+  }
+
+  .about-description {
+    flex-direction: column;
+    max-width: 95%;
+    gap: 1rem;
+  }
+
+  .image-dim {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .approach-description {
+    max-width: 95%;
+  }
+
+  .approach-grid {
+    flex-direction: column;
+  }
+
+  .team-overview {
+    width: 90%;
+  }
+
+  .team-content {
+    max-width: 95%;
+  }
+
+  .team-members {
+    grid-template-columns: 1fr;
+  }
+
+  .body-team {
+    padding: 2rem 1rem;
+  }
+}

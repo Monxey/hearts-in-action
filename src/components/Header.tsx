@@ -1,8 +1,13 @@
+import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../assets/hia_logo.png';
 import './Header.css';
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <header className='header'>
       <div className='header-content'>
@@ -12,13 +17,22 @@ export default function Header() {
           </Link>
           <img src={logo} alt="Hearts in Action logo" className='logo' />
         </div>
-        <nav className='nav'>
-          <NavLink to="/" className="nav-link">Home</NavLink>
-          <NavLink to="/about" className="nav-link">About</NavLink>
-          <NavLink to="/donate" className="nav-link">Donate</NavLink>
-          <NavLink to="/event-newsletter" className="nav-link">Events</NavLink>
+        <button
+          className={`hamburger${menuOpen ? ' open' : ''}`}
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle navigation"
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+        <nav className={`nav${menuOpen ? ' nav-open' : ''}`}>
+          <NavLink to="/" className="nav-link" onClick={closeMenu}>Home</NavLink>
+          <NavLink to="/about" className="nav-link" onClick={closeMenu}>About</NavLink>
+          <NavLink to="/donate" className="nav-link" onClick={closeMenu}>Donate</NavLink>
+          <NavLink to="/event-newsletter" className="nav-link" onClick={closeMenu}>Events</NavLink>
         </nav>
-      </div>  
+      </div>
     </header>
   );
 }

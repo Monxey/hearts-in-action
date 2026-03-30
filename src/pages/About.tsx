@@ -8,6 +8,11 @@ import Diego from '../assets/people/Diego.png';
 import Tiana from '../assets/people/Tiana.png';
 import Grady from '../assets/people/Grady.png';
 import Isaac from '../assets/people/Isaac.png';
+import Avery from '../assets/people/Avery.png'
+import Bella from '../assets/people/Isabella.png'
+import Aarushi from '../assets/people/Aarushi.png'
+import Gabriela from '../assets/people/Gabriela.png'
+import Sara from '../assets/people/Sara.png'
 import image0 from '../assets/About/image0.jpeg'
 import image1 from '../assets/About/image1.jpeg'
 
@@ -15,13 +20,19 @@ function About() {
 	const members = [
 		{
       name: 'Dennis Tudor',
-      role: 'President and Head of Logistics',
+      role: 'President',
       bio: 'Responsible for the overarching operational planning and strategic direction of all Hearts in Action initiatives.',
       photoUrl: Dennis,
     },
+	{
+		name: 'Avery McLearen',
+		role: 'Vice President',
+		bio: 'Responsible for assisting with planning and coordinating events.',
+		photoUrl: Avery,
+	},
     {
       name: 'Kian Mercado',
-      role: 'President and Head of Recruitment',
+      role: 'Director of Events',
       bio: 'Focuses on expanding and nurturing our volunteer base.',
       photoUrl: Kian,
     },
@@ -45,10 +56,34 @@ function About() {
     },
     {
       name: 'Isaac Plowman',
-      role: 'Website & Digital Tools',
-      bio: 'Responsible for managing and enhancing Hearts in Action\'s online presence.',
+      role: 'Director of Outreach',
+      bio: 'Responsible for managing and enhancing Hearts in Action\'s online presence and partnerships.',
       photoUrl: Isaac,
     },
+	{
+		name: 'Sara Mollaei',
+		role: 'Director of Outreach',
+		bio: 'Responsible for managing and enhancing Hearts in Action\'s online presence and partnerships.',
+		photoUrl: Sara,
+	},
+	{
+		name: 'Isabella Ahn',
+		role: 'Director of Marketing',
+		bio: 'Manages marketing strategies and student outreach via graphic design and our instagram.',
+		photoUrl: Bella,
+	},
+	{
+		name: 'Aarushi Kariveda',
+		role: 'Director of Fundraising',
+		bio: 'Responsible for planning and setting up HIA fundraisinig initiatives.',
+		photoUrl: Aarushi,
+	},
+	{
+		name: 'Gabriela',
+		role: 'Director of Fundraising',
+		bio: 'Responsible for planning and setting up HIA fundraisinig initiatives.',
+		photoUrl: Gabriela,
+	}
 	];
 
 	return (
