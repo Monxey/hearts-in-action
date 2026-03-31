@@ -92,7 +92,7 @@ h2 {
 
 @media (max-width: 768px) {
   .footer-content {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .description {

@@ -121,8 +121,10 @@
 }
 
 .approach-grid {
-    display: flex;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 2rem auto;
 }
 
 .approach-card {
@@ -147,10 +149,6 @@
 .content {
     max-width: 100%;
     margin: 0 auto;
-}
-
-.list-item {
-    margin-bottom: 1rem;
 }
 
 .border {
@@ -178,16 +176,24 @@
 }
 
 @media (max-width: 768px) {
+  .approach-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 2rem auto;
+  }
   .slogan-background {
-    min-height: 10vh;
-    background-color: var(--brand-dark);
     overflow: hidden;
-    margin: 3rem auto 0;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
   }
 
   .slogan {
     max-width: 95%;
     font-size: 1.5rem;
+    text-align: left;
+    margin: 0 2rem;
   }
 
   .about-description {
@@ -207,6 +213,8 @@
 
   .approach-grid {
     flex-direction: column;
+    gap: 1rem;
+    margin: 0 auto;
   }
 
   .team-overview {

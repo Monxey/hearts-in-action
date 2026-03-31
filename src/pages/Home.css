@@ -19,6 +19,7 @@
     background-color: var(--brand-dark);
     padding: 2rem;
     border-bottom: 0.1rem solid var(--brand-primary);
+    margin: 0 auto;
 }
 
 .red-background {
@@ -26,8 +27,7 @@
 }
 
 .header-layout {
-    text-align: center;
-    margin: 1rem;
+    margin: 1rem auto;
 }
 
 .header-description {
@@ -159,6 +159,11 @@
     color: var(--brand-secondary)
 }
 
+.home-h2 {
+    color: white;
+    font-size: 2rem;
+}
+
 @keyframes fadeDown {
   to {
     opacity: 1;
@@ -194,6 +199,7 @@
   border: 0.1rem solid var(--brand-primary);
 }
 
+
 @media (max-width: 768px) {
   .home-h1 {
     color: white;
@@ -202,6 +208,14 @@
     opacity: 0;
     max-width: 80%; 
     margin-bottom: 2rem;
+  }
+
+  .home-h2 {
+    color: white;
+    font-size: 2rem;
+    max-width: 80%; 
+    margin: 0 auto 2rem;
+    
   }
   .header-description {
     max-width: 90%;

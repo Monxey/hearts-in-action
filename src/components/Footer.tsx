@@ -2,44 +2,102 @@ import './Footer.css';
 import logo from '../assets/hia_logo.png';
 import Instagram from '../assets/instagram.png'
 import { NavLink } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+
+ function useMediaQuery(query: string) {
+    const [matches, setMatches] = useState(() => window.matchMedia(query).matches);
+
+    useEffect(() => {
+      const mq = window.matchMedia(query);
+      const handler = (e: MediaQueryListEvent) => setMatches(e.matches);
+      mq.addEventListener('change', handler);
+      return () => mq.removeEventListener('change', handler);
+    }, [query]);
+
+    return matches;
+  }
 
 function Footer() {
+  const isMobile = useMediaQuery('(max-width: 768px)');
+
   return (
     <footer className="footer">
-      <div className="footer-content">
-        {/* Logo and Org Info */}
-        <div className="footer-left">
-          <div className='title'>
-            <h2>Hearts in Action</h2>
-            <img src={logo} alt="Hearts in Action logo" style={{height: 'auto', maxWidth: '2rem'}}/>
-          </div>  
-          <p className="description">
-            Fighting food and material insecurity in the UMD community through student-led initiatives.
-          </p>
-        </div>
+      { !isMobile ? (
+        <>
+          <div className="footer-content">
+            {/* Logo and Org Info */}
+            <div className="footer-left">
+              <div className='title'>
+                <h2>Hearts in Action</h2>
+                <img src={logo} alt="Hearts in Action logo" style={{height: 'auto', maxWidth: '2rem'}}/>
+              </div>  
+              <p className="description">
+                Fighting food and material insecurity in the UMD community through student-led initiatives.
+              </p>
+            </div>
 
-        {/* Navigation Links */}
-        <div className="footer-links">
-          <h3>Get Involved</h3>
-          <ul>
-            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd6an51-ZwG-ECVu6EZjxhaqs5CFYUOHxMBwW6c4P9KbUDc1A/viewform?fbclid=PAZXh0bgNhZW0CMTEAAafYZR3yFbKsiGBYyKinROG9mZMdK5NcPPQp-XY7oI2LvQPvq0SfG4eTXohVEw_aem_2IUtKpN5uYV4VQC8uQB82w" target="_blank" rel="noopener noreferrer">Volunteer</a></li>
-            <li><NavLink to="/resources">Resources</NavLink></li>
-            <li><NavLink to="/event-newsletter">Events</NavLink></li>
-          </ul>
-        </div>
+            {/* Navigation Links */}
+            <div className="footer-links">
+              <h3>Get Involved</h3>
+              <ul>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd6an51-ZwG-ECVu6EZjxhaqs5CFYUOHxMBwW6c4P9KbUDc1A/viewform?fbclid=PAZXh0bgNhZW0CMTEAAafYZR3yFbKsiGBYyKinROG9mZMdK5NcPPQp-XY7oI2LvQPvq0SfG4eTXohVEw_aem_2IUtKpN5uYV4VQC8uQB82w" target="_blank" rel="noopener noreferrer">Volunteer</a></li>
+                <li><NavLink to="/resources">Resources</NavLink></li>
+                <li><NavLink to="/event-newsletter">Events</NavLink></li>
+              </ul>
+            </div>
 
-        {/* Social Media */}
-        <div className="footer-social">
-          <h3>Connect</h3>
-          <ul>
-            <li>
-              <a href="https://www.instagram.com/umd.hia/" target="_blank" rel="noopener noreferrer">
-                <img src={Instagram} alt='Instagram' style={{width:'2rem', height:'2rem'}}/>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+            {/* Social Media */}
+            <div className="footer-social">
+              <h3>Connect</h3>
+              <ul>
+                <li>
+                  <a href="https://www.instagram.com/umd.hia/" target="_blank" rel="noopener noreferrer">
+                    <img src={Instagram} alt='Instagram' style={{width:'2rem', height:'2rem'}}/>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </>
+         )
+        : 
+        ( <>
+          {/* Logo and Org Info */}
+          <div className="footer-left">
+            <div className='title'>
+              <h2>Hearts in Action</h2>
+              <img src={logo} alt="Hearts in Action logo" style={{height: 'auto', maxWidth: '2rem'}}/>
+            </div>  
+            <p className="description">
+              Fighting food and material insecurity in the UMD community through student-led initiatives.
+            </p>
+          </div>
+          <div className="footer-content">
+            {/* Navigation Links */}
+            <div className="footer-links">
+              <h3>Get Involved</h3>
+              <ul>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd6an51-ZwG-ECVu6EZjxhaqs5CFYUOHxMBwW6c4P9KbUDc1A/viewform?fbclid=PAZXh0bgNhZW0CMTEAAafYZR3yFbKsiGBYyKinROG9mZMdK5NcPPQp-XY7oI2LvQPvq0SfG4eTXohVEw_aem_2IUtKpN5uYV4VQC8uQB82w" target="_blank" rel="noopener noreferrer">Volunteer</a></li>
+                <li><NavLink to="/resources">Resources</NavLink></li>
+                <li><NavLink to="/event-newsletter">Events</NavLink></li>
+              </ul>
+            </div>
+
+            {/* Social Media */}
+            <div className="footer-social">
+              <h3>Connect</h3>
+              <ul>
+                <li>
+                  <a href="https://www.instagram.com/umd.hia/" target="_blank" rel="noopener noreferrer">
+                    <img src={Instagram} alt='Instagram' style={{width:'2rem', height:'2rem'}}/>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </> )
+      }
+      
 
       <div className="footer-bottom">
         <p>© 2025 Hearts in Action. All rights reserved.</p>

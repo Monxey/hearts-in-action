@@ -44,54 +44,54 @@ function Donate() {
     return ( 
     <>
         <div className="main-background">
+            <div className={styles["donate-header-container"]}>
+                <div className="animated">
+                    <h1 style={{textAlign: 'left', margin: '0 auto 2rem'}}>Make a Donation</h1>
+                </div>
+                <div className={styles['help-message']}>Every dollar helps us provide meals and support to those in need</div>
+            </div>
             <div className={styles['donate-layout']}>
-                <div className={styles['donate-system']}>
-                    <div className="animated">
-                        <h1 style={{textAlign: 'left', margin: '0 auto 2rem'}}>Make a Donation</h1>
+                <div className={styles['donate-card']}>
+                    <div style={{textAlign: 'start', marginBottom: '2rem'}}>Choose your impact</div>
+                    <div className={styles['button-grid']}>
+                        <button className={styles["donation-btn"]} onClick={() => handlePresetClick(2)}>
+                            $2
+                            <div className={styles['dollar-desc']}>1 meal</div>
+                        </button>
+                        <button className={styles["donation-btn"]} onClick={() => handlePresetClick(4)}>
+                            $4
+                            <div className={styles['dollar-desc']}>2 meals</div>
+                        </button>
+                        <button className={styles["donation-btn"]} onClick={() => handlePresetClick(8)}>
+                            $8
+                            <div className={styles['dollar-desc']}>4 meals</div>
+                        </button>
+                        <button className={styles["donation-btn"]} onClick={() => handlePresetClick(16)}>
+                            $16
+                            <div className={styles['dollar-desc']}>8 meals</div>
+                        </button>
                     </div>
-                    <div className={styles['help-message']}>Every dollar helps us provide meals and support to those in need</div>
-                    <div className={styles['donate-card']}>
-                        <div style={{textAlign: 'start', marginBottom: '2rem'}}>Choose your impact</div>
-                        <div className={styles['button-grid']}>
-                            <button className={styles["donation-btn"]} onClick={() => handlePresetClick(2)}>
-                                $2
-                                <div className={styles['dollar-desc']}>1 meal</div>
-                            </button>
-                            <button className={styles["donation-btn"]} onClick={() => handlePresetClick(4)}>
-                                $4
-                                <div className={styles['dollar-desc']}>2 meals</div>
-                            </button>
-                            <button className={styles["donation-btn"]} onClick={() => handlePresetClick(8)}>
-                                $8
-                                <div className={styles['dollar-desc']}>4 meals</div>
-                            </button>
-                            <button className={styles["donation-btn"]} onClick={() => handlePresetClick(16)}>
-                                $16
-                                <div className={styles['dollar-desc']}>8 meals</div>
-                            </button>
+                    <div style={{display: 'flex', flexDirection: 'column', margin: '2rem 0'}}>
+                        <label className={styles['dollar-desc']} style={{textAlign: 'start'}}>Enter Custom Amount:</label>
+                        <div className={styles['input-container']} style={{display: 'flex', alignItems: 'center', justifyContent: 'flex-start'}}>
+                            <div className={`${styles['dollar-desc']} ${styles['sign-pos']}`}>$</div>
+                            <input className={styles['custom-amount-card']} type="number" id="customAmount" name="customAmount" min="1" placeholder="e.g., 25" value={customAmount} onChange={handleCustomChange}/>
                         </div>
-                        <div style={{display: 'flex', flexDirection: 'column', margin: '2rem 0'}}>
-                            <label className={styles['dollar-desc']} style={{textAlign: 'start'}}>Enter Custom Amount:</label>
-                            <div className={styles['input-container']} style={{display: 'flex', alignItems: 'center', justifyContent: 'flex-start'}}>
-                                <div className={`${styles['dollar-desc']} ${styles['sign-pos']}`}>$</div>
-                                <input className={styles['custom-amount-card']} type="number" id="customAmount" name="customAmount" min="1" placeholder="e.g., 25" value={customAmount} onChange={handleCustomChange}/>
-                            </div>
+                    </div>
+                    <div style={{display: 'flex', flexDirection: 'column', margin: '2rem 0'}}>
+                        <div style={{textAlign: 'start', fontSize: '1.25rem'}}>Donor Information (Optional)</div>
+                        <div className={styles['donor-grid']}>
+                            <div className={styles['dollar-desc']} style={{textAlign: 'start'}}>Full Name</div>
+                            <div className={styles['dollar-desc']} style={{textAlign: 'start'}}>Email</div>
+                            <input className={styles['donor-input']} placeholder="Your name"/>
+                            <input className={styles['donor-input']} placeholder="your@email.com"/>
                         </div>
-                        <div style={{display: 'flex', flexDirection: 'column', margin: '2rem 0'}}>
-                            <div style={{textAlign: 'start', fontSize: '1.25rem'}}>Donor Information (Optional)</div>
-                            <div className={styles['donor-grid']}>
-                                <div className={styles['dollar-desc']} style={{textAlign: 'start'}}>Full Name</div>
-                                <div className={styles['dollar-desc']} style={{textAlign: 'start'}}>Email</div>
-                                <input className={styles['donor-input']} placeholder="Your name"/>
-                                <input className={styles['donor-input']} placeholder="your@email.com"/>
-                            </div>
-                        </div>
-                        <div className={styles['stripe-placeholder']}>
-                            Payment form will be integrated here
-                        </div>
-                        <div>
-                            <button className={styles['donate-button']} onClick={() => handleDonate()}>Donate ${selectedAmount}</button>
-                        </div>
+                    </div>
+                    <div className={styles['stripe-placeholder']}>
+                        Payment form will be integrated here
+                    </div>
+                    <div>
+                        <button className={styles['donate-button']} onClick={() => handleDonate()}>Donate ${selectedAmount}</button>
                     </div>
                 </div>
                 <div className={styles['donate-info']}>

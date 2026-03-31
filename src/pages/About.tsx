@@ -156,9 +156,7 @@ function About() {
 							To maintain our efficacy and community service,
 							we strive to execute 2–3 campaigns every semester.
 						</div>
-					</div>
-					<div className={styles['approach-grid']}>
-						<div className={`${styles['list-item']} ${styles['approach-card']}`}>
+						<div className={`${styles['approach-card']}`}>
 							<div className={styles['approach-header']}>
 								Student Leadership
 								<GraduationCapIcon/>

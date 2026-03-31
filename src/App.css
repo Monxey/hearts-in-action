@@ -45,6 +45,13 @@ body {
   padding: 4rem 0;
 }
 
+@media (max-width: 768px) {
+    .main-background {
+    background: linear-gradient(90deg, var(--brand-dark-blue), var(--brand-dark), var(--brand-dark-blue));
+    padding: 6rem 0;
+  }
+}
+
 .two-column-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -60,6 +67,10 @@ body {
 }
 
 @keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(0);
+  }
   to {
     opacity: 1;
     transform: translateY(0.5rem);
